@@ -29,13 +29,15 @@
     background: lbh-colour("lbh-white");
     box-shadow: 0 0 3px rgba(lbh-colour("lbh-black"), 0.3);
     line-height: 1.47;
+    bottom: 0;
+    right: 0;
   }
 }
 
 .metadata__title {
   //display: inline-block;
   float: right;
-  line-height: 1.3rem
+  line-height: 1.3rem;
 }
 
 .metadata__link {

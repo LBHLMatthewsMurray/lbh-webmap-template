@@ -37,6 +37,7 @@ const pointToLayer = (
   }
 };
 
+
 const createTitle = (map, mapTitle, mapSummary, aboutTheData) => {
   let titleBoxContent = null;
   let tooltip = "";
@@ -57,8 +58,9 @@ const createTitle = (map, mapTitle, mapSummary, aboutTheData) => {
 
   if (aboutTheData) {
     dataTooltip =
-      '<button class="lbh-link metadata__link">About the data/Download</button>';
+      '<button id="metadataHiddenButton" class="lbh-link metadata__link">About the data/Download</button>';
   }
+  
 
   if (mapTitle) {
     if (mapSummary) {
@@ -69,25 +71,76 @@ const createTitle = (map, mapTitle, mapSummary, aboutTheData) => {
     titleBoxContent = dataTooltip;
   }
 
+  
+
   //Add box for title and metadata (if the box content is not empty)
   if (titleBoxContent) {
+  
+  const titleWindow = L.control.window(map, {
+    content: `<span class="metadata__title-box--mobile"><i class="fas fa-info-circle fa-2x"></i></span><span class="metadata__title-box--desktop">${titleBoxContent}</span>`,
+    modal: false,
+    position: "bottomRight",
+    closeButton: true,
+    maxWidth: 280,
+    className: "leaflet-control-layers metadata__title-box",
+  }).show();
+
+  document.getElementById('metadataHiddenButton').addEventListener('click', function() {
     metadataWindow.content(aboutTheData);
-    return L.control.custom({
-      id: "title",
-      position: "bottomright",
-      collapsed: false,
-      content: `<span class="metadata__title-box--mobile"><i class="fas fa-info-circle fa-2x"></i></span><span class="metadata__title-box--desktop">${titleBoxContent}</span>`,
-      classes: "leaflet-control-layers metadata__title-box",
-      events: {
-        click: () => {
-          if (isMobile() || aboutTheData) {
-            return metadataWindow.show();
-          }
-        }
-      }
-    });
-  }
+    titleWindow.remove();
+    return metadataWindow.show();
+});
+
+  
+
+  // titleIcon = `<span class="metadata__title-box--desktop"><i class="fas fa-info-circle fa-2x"></i></span>`;
+  // return titleIcon.show();
+  
+  // const titleIcon = L.control.window(map, {
+  //   content: `<span class="metadata__title-box--desktop"><i class="fas fa-info-circle fa-2x"></i></span>`,
+  //   modal: false,
+  //   closeButton:false,
+  //   position: "bottomRight",
+  //   classes: "metadata__title-box--mobile",
+  // }).show();
+  
+} 
+ 
+  
+      
+  
+    // if (titleWindow){
+    //   titleWindow.click(metadataWindow.show());
+    // }else{
+    //   titleButton = '<i class="fas fa-info-circle fa-2x"></i>';
+    //   return titleButton.show();
+      
+    // }
+    //titleWindow.content(`<span class="metadata__title-box--mobile"><i class="fas fa-info-circle fa-2x"></i></span><span class="metadata__title-box--desktop">${titleBoxContent}</span>`);
+    // titleButton =
+    //   '<i class="fas fa-info-circle fa-2x"></i>';
+    // return titleButton.show();
+    
+    //return titleWindow.addTo(this.map);
+    
+    // return titleWindow.show();
+    // return L.control.custom({
+    //   id: "title",
+    //   position: "bottomright",
+    //   collapsed: false,
+    //   content: `<span class="metadata__title-box--mobile"><i class="fas fa-info-circle fa-2x"></i></span><span class="metadata__title-box--desktop">${titleBoxContent}</span>`,
+    //   classes: "leaflet-control-layers metadata__title-box",
+    //   events: {
+    //     click: () => {
+    //       if (isMobile() || aboutTheData) {
+    //         return metadataWindow.show();
+    //       }
+    //     }
+    //   }
+    // });
+  //}
 };
+
 
 class Metadata {
   constructor(map) {
