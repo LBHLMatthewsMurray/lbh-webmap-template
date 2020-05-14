@@ -26,6 +26,7 @@
     "leaflet-search": "^2.9.8",
     "leaflet.awesome-markers": "^2.0.5",
     "leaflet.markercluster": "^1.4.1",
+    "leaflet.pattern": "^0.1.0",
     "pubsub-js": "^1.8.0",
     "whatwg-fetch": "^3.0.0"
   },

@@ -66,7 +66,8 @@
         "icon": "rectangle-landscape"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "stripesPattern",
+        "stripesAngle": 100,
         "stroke": "false",
         "strokeColor": "#F69730",
         "opacity": 1,
@@ -95,11 +96,13 @@
         "icon": "rectangle-landscape"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "shapePattern",
         "stroke": "false",
+        "shapeHeight": 40,
+        "shapeWidth":40,
         "strokeColor": "#fc8e7f",
         "opacity": 1,
-        "fillColor": "#fc8e7f",
+        "fillColor": "#728224",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
@@ -119,16 +122,18 @@
       "personas": ["employment"],
       "sortOrder": 3,
       "pointStyle": {
-        "markerType": "AwesomeMarker",
+        "markerType": "stripesPattern",
         "markerColor": "darkgreen",
         "icon": "rectangle-landscape"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "stripesPattern",
+        "stripesAngle": 30,
+        "stripesWeight": 0.08,
         "stroke": "false",
         "strokeColor": "#728224",
         "opacity": 1,
-        "fillColor": "#728224",
+        "fillColor": "#030303",
         "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
@@ -149,15 +154,18 @@
       "sortOrder": 7,
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "markerColor": "green",
+        "icon": "expand-wide",
+        "icon2": "circle"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "shapePattern",
         "stroke": "false",
-        "strokeColor": "red",
+        "shapeHeight":10,
+        "shapeWidth":10,
+        "strokeColor": "green",
         "opacity": 1,
-        "fillColor": "red",
+        "fillColor": "green",
         "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
@@ -179,7 +187,8 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "icon": "expand-wide",
+        "icon2": "circle"
       },
       "linePolygonStyle": {
         "styleName": "default",

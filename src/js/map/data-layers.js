@@ -1,4 +1,6 @@
 import L from "leaflet";
+//import L from "leaflet.pattern";
+import "leaflet.pattern";
 import { pointToLayer } from "./metadata";
 import { MARKER_COLORS, HACKNEY_GEOSERVER_WFS } from "./consts";
 import Personas from "./personas";
@@ -25,6 +27,7 @@ class DataLayers {
     this.search = null;
     this.list = null;
   }
+
 
   createMarkerPopup(configLayer, feature, layerName) {
     const title = configLayer.popup.title;
@@ -135,6 +138,7 @@ class DataLayers {
     const pointStyle = configLayer.pointStyle;
     const markerType = pointStyle && pointStyle.markerType;
     const markerIcon = pointStyle && pointStyle.icon;
+    const markerIcon2 = pointStyle && pointStyle.icon2;
     const markerColor = pointStyle && pointStyle.markerColor;
     const cluster = pointStyle && pointStyle.cluster;
 
@@ -143,6 +147,10 @@ class DataLayers {
     const opacity = linePolygonStyle && linePolygonStyle.opacity;
     const fillColor = linePolygonStyle && linePolygonStyle.fillColor;
     const layerLineDash = linePolygonStyle && linePolygonStyle.layerLineDash;
+    const stripesAngle = linePolygonStyle && linePolygonStyle.stripesAngle;
+    const stripesWeight = linePolygonStyle && linePolygonStyle.stripesWeight;
+    const shapeWidth = linePolygonStyle && linePolygonStyle.shapeWidth;
+    const shapeHeight = linePolygonStyle && linePolygonStyle.shapeHeight;
 
     const baseLayerStyles = {
       stroke: linePolygonStyle && linePolygonStyle.stroke,
@@ -213,6 +221,47 @@ class DataLayers {
             fillColor: fillColor,
             dashArray: layerLineDash
           });
+        } else if (layerStyle === "stripesPattern"){
+          var stripes = new L.StripePattern({
+            patternContentUnits: 'objectBoundingBox',
+            patternUnits: 'objectBoundingBox',
+            weight: stripesWeight,
+            color:fillColor,
+            fillColor:fillColor,
+            spaceWeight: 0.1,
+            height: 0.2,
+            angle: stripesAngle
+        });
+
+        stripes.addTo(this.map);
+
+          return Object.assign(baseLayerStyles, {
+            opacity: opacity,
+            fillColor: fillColor,
+            fillPattern: stripes,
+            dashArray: layerLineDash
+          });
+        } else if (layerStyle === "shapePattern"){
+          var shape = new L.PatternRect({ 
+            x: 5,
+            y: 5, 
+            width: shapeWidth, 
+            height: shapeHeight, 
+            rx: 10, 
+            ry: 10, 
+            fill: true, 
+            fillColor: fillColor, 
+            color: fillColor});
+
+          var pattern = new L.Pattern({width:40, height:40, fill: true, fillColor: fillColor});
+          pattern.addShape(shape);
+          pattern.addTo(this.map);
+
+          return Object.assign(baseLayerStyles, {
+            opacity: opacity,
+            fillPattern: pattern,
+            dashArray: layerLineDash
+          });
         } else if (layerStyle === "random polygons") {
           //Create a random style and uses it as fillColor.
           const colorHex = `#${Math.round(Math.random() * 0xffffff).toString(
@@ -224,6 +273,16 @@ class DataLayers {
         }
       }
     });
+
+
+
+
+
+  var shape = new L.PatternRect({ x: 5, y: 5, width: 40, height: 40, rx: 10, ry: 10, fill: true });
+
+  var pattern = new L.Pattern({width:50, height:50});
+  pattern.addShape(shape);
+  pattern.addTo(this.map);
 
     if (zoomToFeatureOnClick) {
       layer.on("click", event => {
@@ -276,9 +335,12 @@ class DataLayers {
       const count = layer.getLayers().length;
       const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
         MARKER_COLORS[markerColor]
-      }"></span><i class="fas fa-${markerIcon}" style="color:${
-        MARKER_COLORS[markerColor]
-      }"></i><span class="control__text">${layerName}</span><span id="map-layer-count-${layer.getLayerId(
+      }"></span>
+      <span class="fa-layers fa-fw">
+        <i class="fas fa-${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i>
+        <i class="fas fa-${markerIcon2}" data-fa-transform="shrink-10 down-1" style="color:${MARKER_COLORS[markerColor]}"></i>
+      </span>
+      <span class="control__text">${layerName}</><span id="map-layer-count-${layer.getLayerId(
         layer
       )}" class="control__count">${count} items shown</span>`;
       this.overlayMaps[legendEntry] = layer;
