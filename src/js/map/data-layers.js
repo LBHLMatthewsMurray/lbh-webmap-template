@@ -140,6 +140,7 @@ class DataLayers {
     const markerIcon = pointStyle && pointStyle.icon;
     const markerIcon2 = pointStyle && pointStyle.icon2;
     const markerColor = pointStyle && pointStyle.markerColor;
+    const markerColorIcon2 = pointStyle && pointStyle.markerColorIcon2;
     const cluster = pointStyle && pointStyle.cluster;
 
     const linePolygonStyle = configLayer.linePolygonStyle;
@@ -338,7 +339,7 @@ class DataLayers {
       }"></span>
       <span class="fa-layers fa-fw">
         <i class="fas fa-${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i>
-        <i class="fas fa-${markerIcon2}" data-fa-transform="shrink-10 down-1" style="color:${MARKER_COLORS[markerColor]}"></i>
+        <i class="fas fa-${markerIcon2}" data-fa-transform="shrink-6" style="color:${MARKER_COLORS[markerColorIcon2]}"></i>
       </span>
       <span class="control__text">${layerName}</><span id="map-layer-count-${layer.getLayerId(
         layer

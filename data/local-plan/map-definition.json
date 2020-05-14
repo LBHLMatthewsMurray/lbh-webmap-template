@@ -63,12 +63,14 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "orange",
-        "icon": "rectangle-landscape"
+        "markerColorIcon2": "orange",
+        "icon": "rectangle-landscape",
+        "icon2": "rectangle-landscape"
       },
       "linePolygonStyle": {
-        "styleName": "stripesPattern",
+        "styleName": "default",
         "stripesAngle": 100,
-        "stroke": "false",
+        "stroke": true,
         "strokeColor": "#F69730",
         "opacity": 1,
         "fillColor": "#F69730",
@@ -89,7 +91,7 @@
       "title": "Priority Office Areas",
       "geoserverLayerName": "planning:lp33_priority_office_area",
       "personas": ["employment"],
-      "sortOrder": 2,
+      "sortOrder": 6,
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "lightred",
@@ -117,23 +119,25 @@
       }
     }, 
     {
-      "title": "Locally Strategic Industrial Sites",
+      "title": "Industrial Sites",
       "geoserverLayerName": "planning:lp33_local_significant_industrial",
       "personas": ["employment"],
-      "sortOrder": 3,
+      "sortOrder": 5,
       "pointStyle": {
         "markerType": "stripesPattern",
-        "markerColor": "darkgreen",
-        "icon": "rectangle-landscape"
+        "markerColor": "black",
+        "markerColorIcon2": "black",
+        "icon": "expand-wide",
+        "icon2": "grip-lines-vertical"
       },
       "linePolygonStyle": {
         "styleName": "stripesPattern",
-        "stripesAngle": 30,
+        "stripesAngle": 90,
         "stripesWeight": 0.08,
         "stroke": "false",
-        "strokeColor": "#728224",
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor": "#030303",
+        "fillColor": "black",
         "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
@@ -151,23 +155,24 @@
       "title": "Local Open Spaces",
       "geoserverLayerName": "planning:lp33_open_space_ex_amenity",
       "personas": ["green"],
-      "sortOrder": 7,
+      "sortOrder": 4,
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "green",
+        "markerColorIcon2": "green",
         "icon": "expand-wide",
-        "icon2": "circle"
+        "icon2": "line-columns"
       },
       "linePolygonStyle": {
-        "styleName": "shapePattern",
+        "styleName": "stripesPattern",
+        "stripesAngle": 0,
+        "stripesWeight": 0.08,
         "stroke": "false",
-        "shapeHeight":10,
-        "shapeWidth":10,
-        "strokeColor": "green",
+        "strokeColor": "#728224",
         "opacity": 1,
-        "fillColor": "green",
+        "fillColor":"#728224",
         "fillOpacity": 0.5,
-        "layerLineDash": "",
+        "layerLineDash": 4,
         "weight": 2
       },
       "popup": {
@@ -183,20 +188,23 @@
       "title": "Metropolitan Open Land",
       "geoserverLayerName": "planning:lp33_metropolitan_open_land",
       "personas": ["green"],
-      "sortOrder": 7,
+      "sortOrder": 3,
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "red",
+        "markerColorIcon2": "black",
         "icon": "expand-wide",
-        "icon2": "circle"
+        "icon2": "dot-circle"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "shapePattern",
         "stroke": "false",
+        "shapeHeight": 10,
+        "shapeWidth":10,
         "strokeColor": "red",
         "opacity": 1,
-        "fillColor": "red",
-        "fillOpacity": 0.5,
+        "fillColor": "black",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
       },
@@ -210,7 +218,7 @@
       }
     },
     {
-      "title": "Sites of Importance for Nature Conservation",
+      "title": "SINC",
       "geoserverLayerName": "planning:lp33_sinc",
       "personas": ["green"],
       "sortOrder": 7,
