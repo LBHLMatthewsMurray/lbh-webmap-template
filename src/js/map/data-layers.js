@@ -336,12 +336,7 @@ class DataLayers {
       const count = layer.getLayers().length;
       const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
         MARKER_COLORS[markerColor]
-      }"></span>
-      <span class="fa-layers fa-fw">
-        <i class="fas fa-${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i>
-        <i class="fas fa-${markerIcon2}" data-fa-transform="shrink-6" style="color:${MARKER_COLORS[markerColorIcon2]}"></i>
-      </span>
-      <span class="control__text">${layerName}</><span id="map-layer-count-${layer.getLayerId(
+      }"></span><span class="fa-layers fa-fw"><i class="fas fa-${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i><i class="fas fa-${markerIcon2}" data-fa-transform="shrink-6" style="color:${MARKER_COLORS[markerColorIcon2]}"></i></span><span class="control__text">${layerName}</><span id="map-layer-count-${layer.getLayerId(
         layer
       )}" class="control__count">${count} items shown</span>`;
       this.overlayMaps[legendEntry] = layer;
