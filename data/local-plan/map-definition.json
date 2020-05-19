@@ -64,8 +64,8 @@
         "markerType": "AwesomeMarker",
         "markerColor": "orange",
         "markerColorIcon2": "orange",
-        "icon": "rectangle-landscape",
-        "icon2": "rectangle-landscape"
+        "icon": "fas fa-rectangle-wide",
+        "icon2": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
@@ -95,16 +95,18 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "lightred",
-        "icon": "rectangle-landscape"
+        "markerColorIcon2": "lightred",
+        "icon": "fas fa-rectangle-wide",
+        "icon2": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
-        "styleName": "shapePattern",
+        "styleName": "default",
         "stroke": "false",
         "shapeHeight": 40,
         "shapeWidth":40,
         "strokeColor": "#fc8e7f",
         "opacity": 1,
-        "fillColor": "#728224",
+        "fillColor": "#fc8e7f",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
@@ -127,8 +129,8 @@
         "markerType": "stripesPattern",
         "markerColor": "black",
         "markerColorIcon2": "black",
-        "icon": "expand-wide",
-        "icon2": "grip-lines-vertical"
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-grip-vertical"
       },
       "linePolygonStyle": {
         "styleName": "stripesPattern",
@@ -160,8 +162,8 @@
         "markerType": "AwesomeMarker",
         "markerColor": "green",
         "markerColorIcon2": "green",
-        "icon": "expand-wide",
-        "icon2": "line-columns"
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-line-columns"
       },
       "linePolygonStyle": {
         "styleName": "stripesPattern",
@@ -193,8 +195,8 @@
         "markerType": "AwesomeMarker",
         "markerColor": "red",
         "markerColorIcon2": "black",
-        "icon": "expand-wide",
-        "icon2": "dot-circle"
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-circle"
       },
       "linePolygonStyle": {
         "styleName": "shapePattern",
@@ -225,7 +227,7 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
@@ -273,7 +275,7 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
@@ -281,7 +283,7 @@
         "strokeColor": "red",
         "opacity": 1,
         "fillColor": "red",
-        "fillOpacity": 0.5,
+        "fillOpacity": 0,
         "layerLineDash": "",
         "weight": 2
       },
