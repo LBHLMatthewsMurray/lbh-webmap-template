@@ -307,8 +307,19 @@
       "personas": ["retail"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "icon": "rectangle-landscape",
-        "markerColor": "blue"
+        "markerColor": "darkred",
+        "icon": "fas fa-rectangle-wide"
+      },
+      "linePolygonStyle": {
+        "styleName": "default",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#a23336",
+        "opacity": 1,
+        "fillColor": "#a23336",
+        "fillOpacity": 0.8,
+        "layerLineDash": "",
+        "weight": 2
       },
       "popup": {
         "fields": [
@@ -700,24 +711,18 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "pink",
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
-        "stripesHeight": 0.2,
-        "stripesWeight": 0.2,
-        "stripesSpace": 0.1,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#ff91ea",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor": "#ff91ea",
+        "fillOpacity": 0.3,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 3
       },
       "popup": {
         "fields": [
@@ -734,18 +739,16 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "lightgray",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#a3a3a3",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#a3a3a3",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2

@@ -334,7 +334,7 @@ class DataLayers {
     if (this.mapConfig.showLegend) {
       this.layers.push(layer);
       const count = layer.getLayers().length;
-      if (this.mapConfig.DataLayers.pointStyle.icon2){
+      if (markerIcon2){
         const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
           MARKER_COLORS[markerColor]
         }"></span><span class="fa-layers fa-fw"><i class="${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i><i class="${markerIcon2}" data-fa-transform="shrink-6" style="color:${MARKER_COLORS[markerColorIcon2]}"></i></span><br><span class="control__text">${layerName}</br><span id="map-layer-count-${layer.getLayerId(
@@ -344,7 +344,7 @@ class DataLayers {
       } else {
         const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
           MARKER_COLORS[markerColor]
-        }"></span><span class="fa-layers fa-fw"><i class="${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></span><br><span class="control__text">${layerName}</br><span id="map-layer-count-${layer.getLayerId(
+        }"></span><span class="fa-layers fa-fw"><i class="${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i></span><br><span class="control__text">${layerName}</br><span id="map-layer-count-${layer.getLayerId(
           layer
         )}" class="control__count">${count} items shown</span>`;
         this.overlayMaps[legendEntry] = layer;
