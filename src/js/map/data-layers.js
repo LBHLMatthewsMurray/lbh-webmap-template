@@ -150,6 +150,7 @@ class DataLayers {
     const layerLineDash = linePolygonStyle && linePolygonStyle.layerLineDash;
     const stripesAngle = linePolygonStyle && linePolygonStyle.stripesAngle;
     const stripesWeight = linePolygonStyle && linePolygonStyle.stripesWeight;
+    const stripesWeight = linePolygonStyle && linePolygonStyle.stripesWeight;
     const shapeWidth = linePolygonStyle && linePolygonStyle.shapeWidth;
     const shapeHeight = linePolygonStyle && linePolygonStyle.shapeHeight;
 
@@ -334,13 +335,22 @@ class DataLayers {
     if (this.mapConfig.showLegend) {
       this.layers.push(layer);
       const count = layer.getLayers().length;
-      const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
-        MARKER_COLORS[markerColor]
-      }"></span><span class="fa-layers fa-fw"><i class="${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i><i class="${markerIcon2}" data-fa-transform="shrink-6" style="color:${MARKER_COLORS[markerColorIcon2]}"></i></span><br><span class="control__text">${layerName}</br><span id="map-layer-count-${layer.getLayerId(
-        layer
-      )}" class="control__count">${count} items shown</span>`;
-      this.overlayMaps[legendEntry] = layer;
+      if (this.mapConfig.DataLayers.pointStyle.icon2){
+        const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
+          MARKER_COLORS[markerColor]
+        }"></span><span class="fa-layers fa-fw"><i class="${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></i><i class="${markerIcon2}" data-fa-transform="shrink-6" style="color:${MARKER_COLORS[markerColorIcon2]}"></i></span><br><span class="control__text">${layerName}</br><span id="map-layer-count-${layer.getLayerId(
+          layer
+        )}" class="control__count">${count} items shown</span>`;
+        this.overlayMaps[legendEntry] = layer;
+      } else {
+        const legendEntry = `<span aria-hidden="true" class="control__active-border" style="background:${
+          MARKER_COLORS[markerColor]
+        }"></span><span class="fa-layers fa-fw"><i class="${markerIcon}" style="color:${MARKER_COLORS[markerColor]}"></span><br><span class="control__text">${layerName}</br><span id="map-layer-count-${layer.getLayerId(
+          layer
+        )}" class="control__count">${count} items shown</span>`;
+        this.overlayMaps[legendEntry] = layer;
 
+      }
       const layerPersonas = configLayer.personas;
       for (const x in this.personas) {
         if (layerPersonas.includes(this.personas[x].id)) {

@@ -95,8 +95,7 @@
         "markerType": "AwesomeMarker",
         "markerColor": "lightred",
         "markerColorIcon2": "lightred",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
@@ -134,6 +133,8 @@
         "styleName": "stripesPattern",
         "stripesAngle": 90,
         "stripesWeight": 0.08,
+        "stripesHeight": 0.02,
+        "stripesSpace": 5,
         "stroke": "false",
         "strokeColor": "black",
         "opacity": 1,
@@ -166,6 +167,7 @@
         "styleName": "stripesPattern",
         "stripesAngle": 0,
         "stripesWeight": 0.08,
+        "stripesHeight": 0.02,
         "stroke": "false",
         "strokeColor": "#728224",
         "opacity": 1,
@@ -244,52 +246,6 @@
       }
     },
     {
-      "title": "Conservation Areas",
-      "geoserverLayerName": "planning:lp33_conservation_area",
-      "personas": ["historic"],
-      "pointStyle": {
-        "markerType": "AwesomeMarker",
-        "icon": "rectangle-landscape",
-        "markerColor": "blue"
-      },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
-    },
-    {
-      "title": "Local Shopping Centres",
-      "geoserverLayerName": "planning:lp33_local_shopping_centre",
-      "personas": ["retail"],
-      "pointStyle": {
-        "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "far fa-rectangle-wide"
-      },
-      "linePolygonStyle": {
-        "styleName": "default",
-        "stroke": "false",
-        "strokeColor": "red",
-        "opacity": 1,
-        "fillColor": "red",
-        "fillOpacity": 0,
-        "layerLineDash": "",
-        "weight": 2
-      },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
-    },
-    {
       "title": "Major Town Centres",
       "geoserverLayerName": "planning:lp33_major_town_centre",
       "personas": ["retail"],
@@ -324,7 +280,7 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
@@ -369,17 +325,17 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "markerColor": "lightblue",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stroke": "false",
-        "strokeColor": "red",
+        "stroke": true,
+        "strokeColor": "#8adaff",
         "opacity": 1,
-        "fillColor": "red",
+        "fillColor": "#8adaff",
         "fillOpacity": 0.5,
-        "layerLineDash": "",
+        "layerLineDash": 2,
         "weight": 2
       },
       "popup": {
@@ -425,16 +381,20 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "markerColor": "blue",
+        "markerColorIcon2": "blue",
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-square"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "shapePattern",
         "stroke": "false",
-        "strokeColor": "red",
+        "shapeHeight": 40,
+        "shapeWidth":40,
+        "strokeColor": "#38aadd",
         "opacity": 1,
-        "fillColor": "red",
-        "fillOpacity": 0.5,
+        "fillColor": "#38aadd",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
       },
@@ -453,15 +413,15 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "markerColor": "darkpurple",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stroke": "false",
-        "strokeColor": "red",
+        "strokeColor": "#5b396b",
         "opacity": 1,
-        "fillColor": "red",
+        "fillColor": "#5b396b",
         "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
@@ -481,15 +441,15 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "markerColor": "black",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stroke": "false",
-        "strokeColor": "red",
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor": "red",
+        "fillColor": "black",
         "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
@@ -511,17 +471,18 @@
         "markerType": "AwesomeMarker",
         "markerColor": "orange",
         "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-line-columns"
       },
       "linePolygonStyle": {
-        "styleName": "default",
-        "stripesAngle": 100,
-        "stroke": true,
+        "styleName": "stripesPattern",
+        "stripesAngle": 0,
+        "stripesWeight": 0.08,
+        "stroke": "false",
         "strokeColor": "#F69730",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor":"#F69730",
+        "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
       },
@@ -540,21 +501,19 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "purple",
+        "icon": "fas fa-ellipsis-h"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#D252BA",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#D252BA",
         "fillOpacity": 0.8,
-        "layerLineDash": "",
-        "weight": 2
+        "layerLineDash": 6,
+        "weight": 4
       },
       "popup": {
         "fields": [
@@ -572,9 +531,7 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "icon": "fas fa-horizontal-rule"
       },
       "linePolygonStyle": {
         "styleName": "default",
@@ -585,38 +542,7 @@
         "fillColor": "#F69730",
         "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
-      },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
-    },
-    {
-      "title": "Local Open Space",
-      "geoserverLayerName": "planning:lp33_open_space_ex_amenity",
-      "personas": ["green"],
-      "pointStyle": {
-        "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
-      },
-      "linePolygonStyle": {
-        "styleName": "default",
-        "stripesAngle": 100,
-        "stroke": true,
-        "strokeColor": "#F69730",
-        "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
-        "layerLineDash": "",
-        "weight": 2
+        "weight": 4
       },
       "popup": {
         "fields": [
@@ -690,23 +616,21 @@
     },
     {
       "title": "Archeological Priority Areas",
-      "geoserverLayerName": "planning:area_archaeological_priority",
+      "geoserverLayerName": "planning:lp33_area_archaeological_priority",
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "lightgray",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
-        "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "strokeColor": "#a3a3a3",
+        "opacity": 0.5,
+        "fillColor": "#a3a3a3",
+        "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
       },
@@ -725,21 +649,18 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "red",
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#d43e2a",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor": "#d43e2a",
+        "fillOpacity": 0.3,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 3
       },
       "popup": {
         "fields": [
@@ -753,32 +674,24 @@
     {
       "title": "Central Activities Zone",
       "geoserverLayerName": "planning:lp33_central_activity_zone",
-      "personas": ["green"],
+      "personas": ["londonplan"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "darkred",
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#a23336",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor": "#a23336",
+        "fillOpacity": 0,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 3
       },
       "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
+        "fields": []
       }
     },
     {
@@ -795,6 +708,9 @@
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
+        "stripesHeight": 0.2,
+        "stripesWeight": 0.2,
+        "stripesSpace": 0.1,
         "stroke": true,
         "strokeColor": "#F69730",
         "opacity": 1,
@@ -941,18 +857,16 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "black",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "black",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
@@ -1158,21 +1072,18 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "red",
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#d43e2a",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
-        "layerLineDash": "",
-        "weight": 2
+        "fillColor": "#d43e2a",
+        "fillOpacity": 0.3,
+        "layerLineDash": 6,
+        "weight": 3
       },
       "popup": {
         "fields": [
