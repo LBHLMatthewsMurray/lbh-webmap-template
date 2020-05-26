@@ -150,7 +150,6 @@ class DataLayers {
     const layerLineDash = linePolygonStyle && linePolygonStyle.layerLineDash;
     const stripesAngle = linePolygonStyle && linePolygonStyle.stripesAngle;
     const stripesWeight = linePolygonStyle && linePolygonStyle.stripesWeight;
-    const stripesWeight = linePolygonStyle && linePolygonStyle.stripesWeight;
     const shapeWidth = linePolygonStyle && linePolygonStyle.shapeWidth;
     const shapeHeight = linePolygonStyle && linePolygonStyle.shapeHeight;
 
