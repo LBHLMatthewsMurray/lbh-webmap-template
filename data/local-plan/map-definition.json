@@ -62,21 +62,19 @@
       "personas": ["employment"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "khaki",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#ffda6f",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#ffda6f",
         "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 0
       },
       "popup": {
         "fields": [
@@ -90,6 +88,35 @@
     {
       "title": "Priority Office Areas",
       "geoserverLayerName": "planning:lp33_priority_office_area",
+      "personas": ["employment"],
+      "pointStyle": {
+        "markerType": "AwesomeMarker",
+        "markerColor": "orange",
+        "icon": "fas fa-rectangle-wide"
+      },
+      "linePolygonStyle": {
+        "styleName": "default",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#F69730",
+        "opacity": 1,
+        "fillColor": "#F69730",
+        "fillOpacity": 0.8,
+        "layerLineDash": "",
+        "weight": 0
+      },
+      "popup": {
+        "fields": [
+          {
+            "label": "Name",
+            "name": "name"
+          }
+        ]
+      }
+    }, 
+    {
+      "title": "Industrial Sites",
+      "geoserverLayerName": "planning:lp33_local_significant_industrial",
       "personas": ["employment"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
@@ -107,41 +134,7 @@
         "fillColor": "#fc8e7f",
         "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
-      },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
-    }, 
-    {
-      "title": "Industrial Sites",
-      "geoserverLayerName": "planning:lp33_local_significant_industrial",
-      "personas": ["employment"],
-      "pointStyle": {
-        "markerType": "stripesPattern",
-        "markerColor": "black",
-        "markerColorIcon2": "black",
-        "icon": "far fa-rectangle-wide",
-        "icon2": "fas fa-grip-vertical"
-      },
-      "linePolygonStyle": {
-        "styleName": "stripesPattern",
-        "stripesAngle": 90,
-        "stripesWeight": 0.08,
-        "stripesHeight": 0.02,
-        "stripesSpace": 5,
-        "stroke": "false",
-        "strokeColor": "black",
-        "opacity": 1,
-        "fillColor": "black",
-        "fillOpacity": 0.5,
-        "layerLineDash": "",
-        "weight": 2
+        "weight": 0
       },
       "popup": {
         "fields": [
@@ -159,21 +152,17 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "green",
-        "markerColorIcon2": "green",
-        "icon": "far fa-rectangle-wide",
-        "icon2": "fas fa-line-columns"
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
-        "styleName": "stripesPattern",
-        "stripesAngle": 0,
-        "stripesWeight": 0.08,
-        "stripesHeight": 0.02,
-        "stroke": "false",
+        "styleName": "default",
+        "stripesAngle": 100,
+        "stroke": true,
         "strokeColor": "#728224",
         "opacity": 1,
-        "fillColor":"#728224",
-        "fillOpacity": 0.5,
-        "layerLineDash": 4,
+        "fillColor": "#70ad26",
+        "fillOpacity": 0.8,
+        "layerLineDash": "",
         "weight": 2
       },
       "popup": {
@@ -223,27 +212,24 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "far fa-rectangle-wide"
+        "markerColor": "green",
+        "markerColorIcon2": "darkgreen",
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-line-columns"
       },
       "linePolygonStyle": {
-        "styleName": "default",
+        "styleName": "stripesPattern",
+        "stripesAngle": 0,
+        "stripesWeight": 0.08,
         "stroke": "false",
-        "strokeColor": "red",
+        "strokeColor": "#70ad26",
         "opacity": 1,
-        "fillColor": "red",
+        "fillColor":"#728224",
         "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
       },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
+      "popup": {}
     },
     {
       "title": "Major Town Centres",
@@ -251,18 +237,19 @@
       "personas": ["retail"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "rectangle-landscape"
+        "markerColor": "darkpurple",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stroke": "false",
-        "strokeColor": "red",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#5b396b",
         "opacity": 1,
-        "fillColor": "red",
-        "fillOpacity": 0.5,
+        "fillColor": "#5b396b",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 0
       },
       "popup": {
         "fields": [
@@ -279,18 +266,19 @@
       "personas": ["retail"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
+        "markerColor": "lateblue",
         "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stroke": "false",
-        "strokeColor": "red",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#7966fe",
         "opacity": 1,
-        "fillColor": "red",
-        "fillOpacity": 0.5,
+        "fillColor": "#7966fe",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 0
       },
       "popup": {
         "fields": [
@@ -314,9 +302,9 @@
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#a23336",
+        "strokeColor": "darkred",
         "opacity": 1,
-        "fillColor": "#a23336",
+        "fillColor": "darkred",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
@@ -337,26 +325,23 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "lightblue",
-        "icon": "fas fa-rectangle-wide"
+        "markerColorIcon2": "darkblue",
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-line-columns"
       },
       "linePolygonStyle": {
-        "styleName": "default",
-        "stroke": true,
-        "strokeColor": "#8adaff",
+        "styleName": "stripesPattern",
+        "stripesAngle": 0,
+        "stripesWeight": 0.08,
+        "stroke": "false",
+        "strokeColor": "#0e67a3",
         "opacity": 1,
-        "fillColor": "#8adaff",
+        "fillColor":"#8adaff",
         "fillOpacity": 0.5,
-        "layerLineDash": 2,
+        "layerLineDash": "",
         "weight": 2
       },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
+      "popup": {}
     },
     {
       "title": "Registered Parks & Gardens",
@@ -381,7 +366,7 @@
         "fields": [
           {
             "label": "Name",
-            "name": "name"
+            "name": "Name"
           }
         ]
       }
@@ -392,30 +377,22 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "blue",
-        "markerColorIcon2": "blue",
-        "icon": "far fa-rectangle-wide",
-        "icon2": "fas fa-square"
+        "markerColor": "lightblue",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
-        "styleName": "shapePattern",
-        "stroke": "false",
-        "shapeHeight": 40,
-        "shapeWidth":40,
-        "strokeColor": "#38aadd",
+        "styleName": "default",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#0e67a3",
         "opacity": 1,
-        "fillColor": "#38aadd",
+        "fillColor": "#8adaff",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
       },
       "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
+        "fields": []
       }
     },
     {
@@ -424,27 +401,23 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "darkpurple",
+        "markerColor": "gray",
         "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stroke": "false",
-        "strokeColor": "#5b396b",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#575757",
         "opacity": 1,
-        "fillColor": "#5b396b",
-        "fillOpacity": 0.5,
+        "fillColor": "#575757",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
       },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
+    "popup": {
+      "fields": []
+     }
     },
     {
       "title": "Flood Zone 3b",
@@ -452,26 +425,22 @@
       "personas": ["flooding"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "black",
+        "markerColor": "darkblue",
         "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stroke": "false",
-        "strokeColor": "black",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "#0e67a3",
         "opacity": 1,
-        "fillColor": "black",
-        "fillOpacity": 0.5,
+        "fillColor": "#0e67a3",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
       },
       "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
+        "fields": []
       }
     },
     {
@@ -480,22 +449,19 @@
       "personas": ["employment"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "far fa-rectangle-wide",
-        "icon2": "fas fa-line-columns"
+        "markerColor": "lightgray",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
-        "styleName": "stripesPattern",
-        "stripesAngle": 0,
-        "stripesWeight": 0.08,
-        "stroke": "false",
-        "strokeColor": "#F69730",
+        "styleName": "default",
+        "stripesAngle": 100,
+        "stroke": true,
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor":"#F69730",
-        "fillOpacity": 0.5,
+        "fillColor": "#a3a3a3",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 1
       },
       "popup": {
         "fields": [
@@ -512,16 +478,16 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "purple",
+        "markerColor": "green",
         "icon": "fas fa-ellipsis-h"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#D252BA",
+        "strokeColor": "#70ad26",
         "opacity": 1,
-        "fillColor": "#D252BA",
+        "fillColor": "#70ad26",
         "fillOpacity": 0.8,
         "layerLineDash": 6,
         "weight": 4
@@ -541,50 +507,19 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
+        "markerColor": "lightgreen",
         "icon": "fas fa-horizontal-rule"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#bbf970",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#bbf970",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 4
-      },
-      "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
-      }
-    },
-    {
-      "title": "Metropolitan Open Land",
-      "geoserverLayerName": "planning:lp33_metropolitan_open_land",
-      "personas": ["green"],
-      "pointStyle": {
-        "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
-      },
-      "linePolygonStyle": {
-        "styleName": "default",
-        "stripesAngle": 100,
-        "stroke": true,
-        "strokeColor": "#F69730",
-        "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
-        "layerLineDash": "",
-        "weight": 2
       },
       "popup": {
         "fields": [
@@ -632,17 +567,16 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "lightgray",
-        "icon": "fas fa-rectangle-wide"
+        "icon": "fas fa-expand-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
         "stroke": true,
         "strokeColor": "#a3a3a3",
-        "opacity": 0.5,
+        "opacity": 1,
         "fillColor": "#a3a3a3",
-        "fillOpacity": 0.5,
-        "layerLineDash": "",
+        "fillOpacity": 0,
+        "layerLineDash": 6,
         "weight": 2
       },
       "popup": {
@@ -660,18 +594,22 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "far fa-rectangle-wide"
+        "markerColor": "orange",
+        "markerColorIcon2": "black",
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-circle"
       },
       "linePolygonStyle": {
-        "styleName": "default",
-        "stroke": true,
-        "strokeColor": "#d43e2a",
+        "styleName": "shapePattern",
+        "stroke": "false",
+        "shapeHeight": 10,
+        "shapeWidth":10,
+        "strokeColor": "orange",
         "opacity": 1,
-        "fillColor": "#d43e2a",
-        "fillOpacity": 0.3,
+        "fillColor": "black",
+        "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 3
+        "weight": 2
       },
       "popup": {
         "fields": [
@@ -699,7 +637,7 @@
         "fillColor": "#a23336",
         "fillOpacity": 0,
         "layerLineDash": "",
-        "weight": 3
+        "weight": 4
       },
       "popup": {
         "fields": []
@@ -739,16 +677,16 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "lightgray",
+        "markerColor": "darkpurple",
         "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#a3a3a3",
+        "strokeColor": "#5b396b",
         "opacity": 1,
-        "fillColor": "#a3a3a3",
+        "fillColor": "#5b396b",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
@@ -768,21 +706,19 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "yellow",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "yellow",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "yellow",
         "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 0
       },
       "popup": {
         "fields": [
@@ -799,21 +735,19 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "darkred",
+        "icon": "fas fa-horizontal-rule"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#a23336",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#a23336",
         "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 4
       },
       "popup": {
         "fields": [
@@ -829,21 +763,19 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "thistle",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#dbb7ff",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#dbb7ff",
         "fillOpacity": 0.8,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 0
       },
       "popup": {
         "fields": [
@@ -891,17 +823,18 @@
         "markerType": "AwesomeMarker",
         "markerColor": "orange",
         "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-line-columns"
       },
       "linePolygonStyle": {
-        "styleName": "default",
-        "stripesAngle": 100,
-        "stroke": true,
+        "styleName": "stripesPattern",
+        "stripesAngle": 0,
+        "stripesWeight": 0.08,
+        "stroke": "false",
         "strokeColor": "#F69730",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor":"#F69730",
+        "fillOpacity": 0.5,
         "layerLineDash": "",
         "weight": 2
       },
@@ -920,18 +853,16 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "darkpurple",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#5b396b",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2
@@ -952,15 +883,13 @@
       "pointStyle": {
         "markerType": "AwesomeMarker",
         "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "black",
         "opacity": 1,
         "fillColor": "#F69730",
         "fillOpacity": 0.8,
@@ -982,29 +911,21 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "darkpurple",
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#5b396b",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor": "#dbb7ff",
+        "fillOpacity": 0.3,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 3
       },
       "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
+        "fields": []
       }
     },
     {
@@ -1013,21 +934,19 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "lightgray",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#a3a3a3",
         "fillOpacity": 0.8,
-        "layerLineDash": "",
-        "weight": 2
+        "layerLineDash": 6,
+        "weight": 1
       },
       "popup": {
         "fields": [
@@ -1044,29 +963,21 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "purple",
+        "icon": "far fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
-        "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "#D252BA",
         "opacity": 1,
-        "fillColor": "#F69730",
-        "fillOpacity": 0.8,
+        "fillColor": "#D252BA",
+        "fillOpacity": 0,
         "layerLineDash": "",
-        "weight": 2
+        "weight": 4
       },
       "popup": {
-        "fields": [
-          {
-            "label": "Name",
-            "name": "name"
-          }
-        ]
+        "fields": []
       }
     },
     {
@@ -1075,18 +986,22 @@
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "red",
-        "icon": "far fa-rectangle-wide"
+        "markerColor": "orange",
+        "markerColorIcon2": "black",
+        "icon": "far fa-rectangle-wide",
+        "icon2": "fas fa-circle"
       },
       "linePolygonStyle": {
-        "styleName": "default",
-        "stroke": true,
-        "strokeColor": "#d43e2a",
+        "styleName": "shapePattern",
+        "stroke": "false",
+        "shapeHeight": 10,
+        "shapeWidth":10,
+        "strokeColor": "orange",
         "opacity": 1,
-        "fillColor": "#d43e2a",
-        "fillOpacity": 0.3,
+        "fillColor": "black",
+        "fillOpacity": 0.8,
         "layerLineDash": 6,
-        "weight": 3
+        "weight": 2
       },
       "popup": {
         "fields": [
@@ -1130,22 +1045,20 @@
     },
     {
       "title": "LLDC Metropolitan Open Land",
-      "geoserverLayerName": "planning:lp33_metropolitan_open_land",
+      "geoserverLayerName": "planning:lp33_lldc_metropolitan_open_area",
       "personas": ["green"],
       "pointStyle": {
         "markerType": "AwesomeMarker",
-        "markerColor": "orange",
-        "markerColorIcon2": "orange",
-        "icon": "fas fa-rectangle-wide",
-        "icon2": "fas fa-rectangle-wide"
+        "markerColor": "green",
+        "icon": "fas fa-rectangle-wide"
       },
       "linePolygonStyle": {
         "styleName": "default",
         "stripesAngle": 100,
         "stroke": true,
-        "strokeColor": "#F69730",
+        "strokeColor": "black",
         "opacity": 1,
-        "fillColor": "#F69730",
+        "fillColor": "#70ad26",
         "fillOpacity": 0.8,
         "layerLineDash": "",
         "weight": 2

@@ -94,8 +94,26 @@ class Map {
         layer !== this.masterMapLayer
       ) {
         this.map.removeLayer(layer);
+        var shape = new L.PatternRect({ 
+          x: 5,
+          y: 5, 
+          width: shapeWidth, 
+          height: shapeHeight, 
+          rx: 10, 
+          ry: 10, 
+          fill: true, 
+          fillColor: fillColor, 
+          color: fillColor});
+
+        var pattern = new L.Pattern({width:40, height:40, fill: true, fillColor: fillColor});
+        pattern.addShape(shape);
+        pattern.addTo(this.map);
+        
+
       }
     });
+
+
 
     this.setZoom();
     if (this.hasPersonas) {

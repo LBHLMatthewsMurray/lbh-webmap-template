@@ -276,15 +276,6 @@ class DataLayers {
     });
 
 
-
-
-
-  var shape = new L.PatternRect({ x: 5, y: 5, width: 40, height: 40, rx: 10, ry: 10, fill: true });
-
-  var pattern = new L.Pattern({width:50, height:50});
-  pattern.addShape(shape);
-  pattern.addTo(this.map);
-
     if (zoomToFeatureOnClick) {
       layer.on("click", event => {
         if (event.layer instanceof L.Polygon) {

@@ -52,7 +52,11 @@ const MARKER_COLORS = {
   pink: "#ff91ea",
   lightgray: "#a3a3a3",
   gray: "#575757",
-  black: "#3b3b3b"
+  black: "#3b3b3b",
+  khaki: "#ffda6f",
+  yellow: "#ffff01",
+  mediumslateblue:"#7966fe",
+  thistle: "#dbb7ff"
 };
 
 const PERSONA_ACTIVE_CLASS = "personas__button--active";
